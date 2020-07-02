@@ -1,0 +1,47 @@
+.search {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.search__svg {    
+    flex: 0 0 auto;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.search__svg:hover {    
+    transform: scale(1.5);
+}
+.search__box {
+    flex: 1 1 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    transition: all 0.5s ease-in-out;
+}
+
+.search__item {
+    flex-basis: 20%;
+    margin-left: 4%;
+   
+}
+
+.search__select {
+    border: 1px solid black;
+}
+
+.search__input {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.search__button {
+    background-color: transparent;
+    padding: 5px 10px;
+    border: 1px solid black;
+    transition: all .3s;
+}
+
+.search__button:hover {
+
+}

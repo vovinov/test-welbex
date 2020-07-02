@@ -1,0 +1,21 @@
+.table {
+    width: 100%;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5);
+    border-collapse: collapse;
+    height: 272px;
+}
+
+th, td {
+    padding: 10px 15px;
+    height: 50px;
+    text-align: left;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+.table-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

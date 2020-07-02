@@ -1,0 +1,10 @@
+.table__list {
+    grid-column: 1 / 5;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.table__item {
+    grid-column: 1 / 5;
+    border-bottom: 1px solid grey;
+}

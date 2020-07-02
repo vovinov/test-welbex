@@ -2,6 +2,7 @@
   "name": "test-welbex",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://vovinov.github.io/welbex-test",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -30,5 +31,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "classnames": "^2.2.6",
+    "lodash": "^4.17.15"
   }
 }

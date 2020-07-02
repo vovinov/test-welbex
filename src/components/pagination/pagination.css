@@ -1,0 +1,33 @@
+.pagination {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    justify-content: center;
+}
+
+.pagination__item {
+    padding: 5px 8px;
+    margin: 5px;
+    border: 2px solid black; 
+    transition: all .3s;  
+    box-shadow: 3px 3px 10px rgba(0,0,0, 0.7);
+}
+
+.pagination__item--active {
+    transform: scale(1.1);
+    border-color: salmon;
+}
+
+.pagination__item--active .pagination__link {
+    color: salmon;
+}
+
+.pagination__item:hover {
+    transform: scale(1.1);
+}
+
+.pagination__link {
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+}

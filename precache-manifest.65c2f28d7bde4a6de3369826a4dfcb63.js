@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "868b71d299415fc29a011d3a38dcb685",
+    "revision": "1478e870ca7c54cc4b40582f97e86223",
     "url": "/test-welbex/index.html"
   },
   {
-    "revision": "840be75d44cb054c636f",
+    "revision": "a6bff67324d3a3c3c008",
     "url": "/test-welbex/static/css/main.01f51234.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/test-welbex/static/js/2.787a9daa.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "840be75d44cb054c636f",
-    "url": "/test-welbex/static/js/main.9d4bf6d7.chunk.js"
+    "revision": "a6bff67324d3a3c3c008",
+    "url": "/test-welbex/static/js/main.ff3527c0.chunk.js"
   },
   {
     "revision": "bad5086879b868b68391",

@@ -48,36 +48,44 @@ export class SearchPanel extends Component {
                         </g></g>
                     </svg>
                 </div>
-                <div 
+                <ul 
                     className="search__box"
                     style={show ? {opacity: '1'} : {opacity: '0'}} >
-                    <select 
-                        className="search__item search__select" 
-                        onChange={(e) => this.onChangeSelectType(e)}>
-                            <option value="date">Дата</option>
-                            <option value="name">Название</option>
-                            <option value="count">Количество</option>
-                            <option value="distance">Расстояние</option>
-                    </select>
-                    <select 
-                        className="search__item search__select"
-                        onChange={(e) => this.onChangeSelectOperator(e)}>
-                        <option value="equally">Равно</option>
-                        <option value="contains">Содержать</option>
-                        {!(search.type === 'name') && <option value="more">Больше</option>}
-                        {!(search.type === 'name') && <option value="less">Меньше</option>}
-                    </select>
-                    <input 
-                        className="search__item search__input" 
-                        type="text" 
-                        placeholder="Введите значение"
-                        onChange={(e) => this.onChangeInput(e)} />
-                    <button 
-                        className="search__item search__button"
-                        onClick={() => this.props.searchData(search)}>
-                        Поиск
-                    </button>
-                </div>
+                    <li className="search__item">
+                        <select 
+                            className="search__select" 
+                            onChange={(e) => this.onChangeSelectType(e)}>
+                                <option value="date">Дата</option>
+                                <option value="name">Название</option>
+                                <option value="count">Количество</option>
+                                <option value="distance">Расстояние</option>
+                        </select>
+                    </li>
+                    <li className="search__item">
+                        <select 
+                            className="search__select"
+                            onChange={(e) => this.onChangeSelectOperator(e)}>
+                            <option value="equally">Равно</option>
+                            <option value="contains">Содержать</option>
+                            {!(search.type === 'name') && <option value="more">Больше</option>}
+                            {!(search.type === 'name') && <option value="less">Меньше</option>}
+                        </select>
+                    </li>
+                    <li className="search__item">
+                        <input 
+                            className="search__input" 
+                            type="text" 
+                            placeholder="Значение"
+                            onChange={(e) => this.onChangeInput(e)} />
+                    </li> 
+                    <li className="search__item">
+                        <button 
+                            className="search__button"
+                            onClick={() => this.props.searchData(search)}>
+                            Поиск
+                        </button>
+                    </li>
+                </ul>
             </div> 
         )
     }

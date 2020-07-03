@@ -19,3 +19,19 @@ th, td {
     align-items: center;
     justify-content: space-between;
 }
+
+@media only screen and (max-width: 660px) {
+
+    .table-heading {        
+        flex-direction: column;
+    }
+
+    th, td {
+        padding: 5px 10px;
+        height: auto;
+    }
+
+    .table-heading__title {
+        margin-bottom: 5px;
+    }
+}

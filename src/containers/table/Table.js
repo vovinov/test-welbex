@@ -103,7 +103,7 @@ export default class Table extends Component {
                             <th scope="col">Дата</th>
                             <th scope="col">
                                 <div className="table-heading">
-                                    <span id="name">Название</span>                                                                
+                                    <span className="table-heading__title">Название</span>                                                                
                                     <SvgIcon                                         
                                         onSvgClick={() => this.changeSortOrder('name')} 
                                         order={sortField === 'name' ? sortOrder : null} />
@@ -111,7 +111,7 @@ export default class Table extends Component {
                             </th>
                             <th scope="col">
                                 <div className="table-heading">
-                                    <span id="count">Количество</span>                                                                
+                                    <span className="table-heading__title">Количество</span>                                                                
                                     <SvgIcon 
                                         onSvgClick={() => this.changeSortOrder('count')} 
                                         order={sortField === 'count' ? sortOrder : null} />
@@ -119,7 +119,7 @@ export default class Table extends Component {
                             </th>
                             <th scope="col">
                                 <div className="table-heading">
-                                    <span id="distance"> Расстояние</span>                                                                
+                                    <span className="table-heading__title">Расстояние</span>                                                                
                                     <SvgIcon 
                                         onSvgClick={() => this.changeSortOrder('distance')} 
                                         order={sortField === 'distance' ? sortOrder : null} />

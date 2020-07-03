@@ -27,12 +27,11 @@ function Pagination({rowsPerPage, totalRows, changePage, currentPage}) {
                     <li 
                     key={number} 
                     className={itemClasses}>
-                    <a 
-                        onClick={() => changePage(number)} 
-                        href='!#' 
+                    <button 
+                        onClick={() => changePage(number)}  
                         className='pagination__link'>
                     {number}
-                    </a>
+                    </button>
                 </li>
                 )
               

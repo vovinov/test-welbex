@@ -28,6 +28,7 @@ export default class Table extends Component {
         if (prevState.sortField !== this.state.sortField || 
             prevState.sortOrder !== this.state.sortOrder) {
             this.sortData(this.state.data)
+            this.setState({currentPage: 1})
         }
     }
 
